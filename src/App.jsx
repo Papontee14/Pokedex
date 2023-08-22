@@ -6,7 +6,7 @@ import axios from 'axios';
 
 function App() {
   const [pokemons, setPokemons] = useState([]);
-  const [amount, setamount] = useState(12);
+  const [amount, setAmount] = useState(12);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const [searchText, setSearchText] = useState('')
@@ -26,11 +26,12 @@ function App() {
   };
 
   const Loadmore = () => {
-    setamount((amount) => amount + 12);
+    setAmount((amount) => amount + 12);
   };
 
   const SearchPokemon = (text) => {
     setSearchText(text)
+    setAmount(12)
   };
 
   useEffect(() => {

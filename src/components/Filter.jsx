@@ -8,12 +8,12 @@ const Filter = (props) => {
   };
 
   const Search = () => {
-    props.onSubmit(text);
+    props.onSubmit(text.trim());
   };
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
-      props.onSubmit(text);
+      props.onSubmit(text.trim());
     }
   };
   return (
