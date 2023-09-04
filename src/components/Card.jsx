@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const Card = (props) => {
   const [pokemons, setPokemons] = useState([]);
@@ -25,19 +26,45 @@ const Card = (props) => {
   }, []);
 
   const Uppercase = (word) => {
-    return word?.charAt(0).toUpperCase() + word?.slice(1);
+    const response = word?.charAt(0).toUpperCase() + word?.slice(1);
+    return response;
   };
   return (
-    <div className='col-span-3 bg-slate-100 p-3 rounded-lg'>
-      <img src={pokemons.sprites?.other['official-artwork'].front_default} />
-      <p>ID : {pokemons.id}</p>
-      {Uppercase(pokemons.name)}
-      <div className='flex gap-4'>
-        {pokemons.types?.map((type) => {
-          return <div key={type.slot}>{type.type.name}</div>;
-        })}
-      </div>
-    </div>
+    <React.Fragment>
+      {pokemons.types?.map((type) => {
+        if (type.type.name === props.element) {
+          return (
+            <div className='col-span-3 rounded-xl shadow-lg' key={pokemons.id}>
+              <Link to={`/PokemonDetail`}>
+                <img
+                  src={
+                    pokemons.sprites?.other['official-artwork'].front_default
+                  }
+                  className=' bg-slate-100 rounded-t-xl'
+                />
+                <div className='p-3'>
+                  <p className='font-bold text-slate-700'>ID : {pokemons.id}</p>
+                  <p className='pt-1 font-medium text-xl'>
+                    {Uppercase(pokemons.name)}
+                  </p>
+                  <div className='grid grid-cols-12 gap-4 mt-2'>
+                    {pokemons.types?.map((type) => {
+                      return (
+                        <div key={type.slot} className='col-span-4'>
+                          <div className={type.type.name + ' rounded-md'}>
+                            {Uppercase(type.type.name)}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              </Link>
+            </div>
+          );
+        }
+      })}
+    </React.Fragment>
   );
 };
 

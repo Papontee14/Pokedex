@@ -17,8 +17,8 @@ const Filter = (props) => {
     }
   };
   return (
-    <div className='w-3/12'>
-      <p className='py-2 text-xl font-semibold'>Name or ID</p>
+    <div className='m-7 px-3 w-3/12'>
+      <p className='py-2 text-2xl font-bold'>Name or ID</p>
       <div className='mb-3'>
         <div className='relative mb-4 flex w-full flex-wrap items-stretch'>
           <input
