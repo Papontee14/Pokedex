@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.all {
+  background: rgb(224 36 36);
+  display: flex;
+  justify-content: center;
+}
 .ground {
   background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
   display: flex;

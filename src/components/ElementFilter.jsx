@@ -4,6 +4,7 @@ const ElementFilter = (props) => {
   const [element, setElement] = useState('');
 
   const elementals = [
+    'all',
     'bug',
     'dark',
     'dragon',

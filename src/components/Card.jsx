@@ -34,7 +34,7 @@ const Card = (props) => {
       {pokemons.types?.map((type) => {
         if (type.type.name === props.element) {
           return (
-            <div className='col-span-3 rounded-xl shadow-lg' key={pokemons.id}>
+            <div className='col-span-3 rounded-xl shadow-lg'>
               <Link to={`/PokemonDetail`}>
                 <img
                   src={
