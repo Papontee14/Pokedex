@@ -27,14 +27,10 @@ const Card = (props) => {
 
   const Uppercase = (word) => {
     const response = word?.charAt(0).toUpperCase() + word?.slice(1);
-    return response;
+    return String(response);
   };
   return (
-    <React.Fragment>
-      {pokemons.types?.map((type) => {
-        if (type.type.name === props.element) {
-          return (
-            <div className='col-span-3 rounded-xl shadow-lg'>
+            <div className='col-span-3 rounded-xl shadow-lg' key='pokemons.id'>
               <Link to={`/PokemonDetail`}>
                 <img
                   src={
@@ -44,9 +40,9 @@ const Card = (props) => {
                 />
                 <div className='p-3'>
                   <p className='font-bold text-slate-700'>ID : {pokemons.id}</p>
-                  <p className='pt-1 font-medium text-xl'>
+                  <div className='pt-1 font-medium text-xl'>
                     {Uppercase(pokemons.name)}
-                  </p>
+                  </div>
                   <div className='grid grid-cols-12 gap-4 mt-2'>
                     {pokemons.types?.map((type) => {
                       return (
@@ -61,10 +57,6 @@ const Card = (props) => {
                 </div>
               </Link>
             </div>
-          );
-        }
-      })}
-    </React.Fragment>
   );
 };
 
