@@ -4,107 +4,69 @@
 
 .all {
   background: rgb(224 36 36);
-  display: flex;
-  justify-content: center;
 }
 .ground {
   background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
-  display: flex;
-  justify-content: center;
 }
 .rock {
   background: #a38c21;
-  display: flex;
-  justify-content: center;
   color: white;
 }
 .bug {
   background: #729f3f;
-  display: flex;
-  justify-content: center;
   color: white;
 }
 .dark {
   background: gray;
-  display: flex;
-  justify-content: center;
   color: white;
 }
 .dragon {
   background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
-  display: flex;
-  justify-content: center;
   color: white;
 }
 .electric {
   background: #eed535;
-  display: flex;
-  justify-content: center;
 }
 .fairy {
   background: linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%);
-  display: flex;
-  justify-content: center;
 }
 .fighting {
   background: linear-gradient(180deg, #d56723 50%, #d56723 50%);
-  display: flex;
-  justify-content: center;
   color: white;
 }
 .fire {
   background: linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%);
-  display: flex;
-  justify-content: center;
   color: white;
 }
 .flying {
   background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
-  display: flex;
-  justify-content: center;
 }
 .ghost {
   background: linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%);
-  display: flex;
-  justify-content: center;
   color: white;
 }
 .grass {
   background: linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
-  display: flex;
-  justify-content: center;
 }
 .ice {
   background: linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
-  display: flex;
-  justify-content: center;
   color: white;
 }
 .normal {
   background: linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
-  display: flex;
-  justify-content: center;
 }
 .poison {
   background: linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
-  display: flex;
-  justify-content: center;
   color: white;
 }
 .psychic {
   background: linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
-  display: flex;
-  justify-content: center;
   color: white;
 }
 .steel {
   background: linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%);
-  display: flex;
-  justify-content: center;
 }
 .water {
   background: linear-gradient(180deg, #4592c4 50%, #4592c4 50%);
-  display: flex;
-  justify-content: center;
   color: white;
 }

@@ -18,12 +18,12 @@ const Filter = (props) => {
   };
   return (
     <div className='m-7 px-3 w-3/12'>
-      <p className='py-2 text-2xl font-bold'>Name or ID</p>
+      <div className='py-2 text-2xl font-bold w-48'>Name or ID</div>
       <div className='mb-3'>
-        <div className='relative mb-4 flex w-full flex-wrap items-stretch'>
+        <div className='relative mb-4 flex w-full flex-row items-stretch'>
           <input
             type='search'
-            className='relative m-0 block w-[1px] min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary'
+            className='m-0 block w-80 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200'
             placeholder='Search'
             aria-label='Search'
             aria-describedby='button-addon2'
